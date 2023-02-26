@@ -49,6 +49,23 @@ function login($username, $pwd) {
 
 }
 
+function get_user_id($username){
+    require 'DBC.php';
+
+    $sql = "SELECT id FROM utente WHERE username = :username";
+    $stmt = $db->prepare($sql);
+    $stmt->bindParam(':username', $username);
+    try {
+        $stmt->execute();
+    } catch(PDOException $e) {
+        return false;
+    }
+
+    $id_utente = $stmt->fetch();
+
+    return $id_utente[0];
+}
+
 function register_socio({})
 
 ?>
