@@ -9,7 +9,7 @@
 }
 
 body{
-    background: linear-gradient(to left, #09bad3, #0ef9a8);
+    background: linear-gradient(to left top, #585c9e, #14B789);
     min-height: 100vh;
 }
 
@@ -21,6 +21,7 @@ body{
     display: flex;
     flex-direction: row;
     gap: 5px;
+    padding-left: 0;
     margin: 10px 0;
 }
 
@@ -37,8 +38,9 @@ body{
 
 .wrapper .form-left{
     background: #3786bd;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    /*border-top-left-radius: 10px;*/
+    /*border-bottom-left-radius: 10px;*/
+    border-radius: 5px;
     padding: 20px 40px;
     position: relative;
     width: 100%;
@@ -51,6 +53,15 @@ body{
     padding: 5px 0 0;
     margin-bottom: 34px;
     pointer-events: none;
+}
+
+.wrapper h1{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1px 0 0;
+    margin-bottom: 15px;
+    pointer-events: none;
+    color: #225b7a;
 }
 
 .wrapper .form-left p{
@@ -71,8 +82,9 @@ body{
 .wrapper .form-left input{
     padding: 15px;
     background: #fff;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /*border-top-left-radius: 5px;*/
+    /*border-bottom-right-radius: 5px;*/
+    border-radius: 5px;
     width: 180px;
     border: none;
     margin: 15px 0 50px 0px;
@@ -110,8 +122,9 @@ body{
     width: 100%;
     padding: 10px 15px;
     border: 1px solid #e5e5e5;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /*border-top-left-radius: 5px;*/
+    /*border-bottom-right-radius: 5px;*/
+    border-radius: 5px;
     outline: none;
     color: #333;
 }
@@ -142,8 +155,9 @@ body{
 .wrapper .register{
     padding: 12px;
     background: #3786bd;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /*border-top-left-radius: 5px;*/
+    /*border-bottom-right-radius: 5px;*/
+    border-radius: 5px;
     width: 130px;
     border: none;
     margin: 6px 0 15px 0px;
